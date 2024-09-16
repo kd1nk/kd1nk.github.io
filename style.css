@@ -1,0 +1,273 @@
+/* Importing a modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #74ebd5, #acb6e5);
+}
+
+/* Weather Container */
+.weather-container {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scrollable Content */
+.scrollable-content {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hourly Forecast Header */
+.scrollable-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.6em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Hourly Forecast Items */
+.hourly-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hourly Forecast Item Hover Effect */
+.hourly-item:hover {
+    background: #e0e0e0;
+    transform: scale(1.02);
+}
+
+/* Hourly Forecast Item Time */
+.hourly-item p strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Hourly Forecast Item Details */
+.hourly-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Header Styles */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #007bff;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Input Field Focus Effect */
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Active Effect */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Info Styles */
+.weather-info {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Weather Info Hover Effect */
+.weather-info:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Weather Info Text Hover Effect */
+.weather-info p:hover {
+    color: #007bff;
+    transform: scale(1.03);
+}
+
+.weather-info p:nth-of-type(1) {
+    font-weight: 500;
+}
+
+/* Recent Searches Section */
+#recent-searches {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Recent Searches Header */
+#recent-searches h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Underline Effect for Recent Searches Header */
+#recent-searches h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Search List Styles */
+#search-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Search List Item Styles */
+#search-list li {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    color: #666;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search List Item Hover Effect */
+#search-list li:hover {
+    background: #f1f1f1;
+    color: #333;
+    transform: translateX(5px);
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none; /* Initially hidden */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .weather-container {
+        padding: 20px;
+        width: 90%;
+        max-width: none;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 80px);
+    }
+
+    button {
+        margin-left: 5px;
+    }
+
+    #recent-searches h2 {
+        font-size: 1.4em;
+    }
+}
